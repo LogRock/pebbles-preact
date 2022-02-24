@@ -1,0 +1,131 @@
+import { h, Fragment } from 'preact';
+import Color from "../../components/Color";
+import Shade from "../../components/Shade";
+import LinearGradient from "../../components/LinearGradient";
+import { Canvas, Story, Meta } from "@storybook/addon-docs"
+
+<Meta title="Foundations/Colors" component={Color} />
+
+# Colors
+
+## Neutral
+<Canvas>
+  <Story name="Neutral">
+    <Color color="neutral" value="50" />
+    <Color color="neutral" value="100" />
+    <Color color="neutral" value="200" />
+    <Color color="neutral" value="300" />
+    <Color color="neutral" value="400" />
+    <Color color="neutral" value="500" />
+    <Color color="neutral" value="600" />
+    <Color color="neutral" value="700" />
+    <Color color="neutral" value="800" />
+    <Color color="neutral" value="900" />
+  </Story>
+</Canvas>
+
+## Primary
+<Canvas>
+  <Story name="Primary">
+    <Color color="primary" value="50" />
+    <Color color="primary" value="100" />
+    <Color color="primary" value="200" />
+    <Color color="primary" value="300" />
+    <Color color="primary" value="400" />
+    <Color color="primary" value="500" />
+    <Color color="primary" value="600" />
+    <Color color="primary" value="700" />
+    <Color color="primary" value="800" />
+    <Color color="primary" value="900" />
+  </Story>
+</Canvas>
+
+## Secondary
+<Canvas>
+  <Story name="Secondary">
+    <Color color="secondary" value="50" />
+    <Color color="secondary" value="100" />
+    <Color color="secondary" value="200" />
+    <Color color="secondary" value="300" />
+    <Color color="secondary" value="400" />
+    <Color color="secondary" value="500" />
+    <Color color="secondary" value="600" />
+    <Color color="secondary" value="700" />
+    <Color color="secondary" value="800" />
+    <Color color="secondary" value="900" />
+  </Story>
+</Canvas>
+
+## Success
+<Canvas>
+  <Story name="Success">
+    <Color color="success" value="50" />
+    <Color color="success" value="100" />
+    <Color color="success" value="200" />
+    <Color color="success" value="300" />
+    <Color color="success" value="400" />
+    <Color color="success" value="500" />
+    <Color color="success" value="600" />
+    <Color color="success" value="700" />
+    <Color color="success" value="800" />
+    <Color color="success" value="900" />
+  </Story>
+</Canvas>
+
+## Warning
+<Canvas>
+  <Story name="Warning">
+    <Color color="warning" value="50" />
+    <Color color="warning" value="100" />
+    <Color color="warning" value="200" />
+    <Color color="warning" value="300" />
+    <Color color="warning" value="400" />
+    <Color color="warning" value="500" />
+    <Color color="warning" value="600" />
+    <Color color="warning" value="700" />
+    <Color color="warning" value="800" />
+    <Color color="warning" value="900" />
+  </Story>
+</Canvas>
+
+## Error
+<Canvas>
+  <Story name="Error">
+    <Color color="error" value="50" />
+    <Color color="error" value="100" />
+    <Color color="error" value="200" />
+    <Color color="error" value="300" />
+    <Color color="error" value="400" />
+    <Color color="error" value="500" />
+    <Color color="error" value="600" />
+    <Color color="error" value="700" />
+    <Color color="error" value="800" />
+    <Color color="error" value="900" />
+  </Story>
+</Canvas>
+
+## Shades
+<Canvas>
+  <Story name="Shades">
+    <Shade value="0" />
+    <Shade value="100" />
+  </Story>
+</Canvas>
+
+## Gradients
+
+### Linear Gradients
+<Canvas>
+  <Story name="Linear Gradients">
+    <LinearGradient name="sunburst" />
+    <LinearGradient name="darkWineSea" />
+    <LinearGradient name="cherryCola" />
+    <LinearGradient name="coldSky" />
+    <LinearGradient name="oliveGarden" />
+    <LinearGradient name="morningSakura" />
+    <LinearGradient name="blueMoon" />
+    <LinearGradient name="synthwave" />
+    <LinearGradient name="teaLeaves" />
+    <LinearGradient name="blueberryWine" />
+  </Story>
+</Canvas>
