@@ -121,8 +121,7 @@ interface Blurs {
 }
 
 interface LinearGradient {
-  colors: CSS.Property.BackgroundColor[]
-  angle: CSS.Property.Rotate
+  background: CSS.Property.Background
 }
 
 interface MeshGradient {
@@ -154,6 +153,7 @@ interface Gradients {
 }
 
 export default interface Theme {
+  name: string
   spacings: Spacings
   colors: Colors
   typography: Typography
