@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
 const path = require('path')
 import preact from '@preact/preset-vite'
+const resolvePath = (str: string) => path.resolve(__dirname, str)
+import typescript from '@rollup/plugin-typescript'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,7 +24,17 @@ export default defineConfig({
           preact: 'Preact',
           'styled-components': 'styled'
         }
-      }
+      },
+      plugins: [
+        typescript({
+          'target': 'es2020',
+          'rootDir': resolvePath('lib'),
+          'declaration': true,
+          'declarationDir': resolvePath('dist'),
+          exclude: resolvePath('node_modules/**'),
+          allowSyntheticDefaultImports: true
+        })
+      ]
     }
   }
 })
