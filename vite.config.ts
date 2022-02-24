@@ -22,7 +22,6 @@ export default defineConfig({
         // for externalized deps
         globals: {
           preact: 'Preact',
-          'styled-components': 'styled'
         }
       },
       plugins: [

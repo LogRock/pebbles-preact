@@ -1,13 +1,13 @@
 import { h, Fragment, FunctionalComponent } from 'preact';
 import { useContext } from "preact/hooks"
 import styled, { ThemeContext, ThemeProvider } from "styled-components"
-import { light } from "../../lib/theme"
+import { light } from "../../../lib/theme"
 
-const ShadeBox = styled.div<{ value: string }>`
-  width: 392px;
+const ColorBox = styled.div<{ color: string, value: string }>`
+  width: 147px;
   height: 72px;
-  background: ${({ theme, value }) => {
-    return theme.colors.shades[value];
+  background: ${({ theme, color, value }) => {
+    return theme.colors[color][value];
   }};
   border-radius: 4px;
 `
@@ -19,22 +19,22 @@ const Values = styled.div`
 `
 
 const Wrapper = styled.div`
-  width: 392px;
+  width: 147px;
   text-transform: uppercase;
   float: left;
   padding: 10px
 `
 
-const Shade: FunctionalComponent<{ value: string }> = ({ value }) => {
+const Color: FunctionalComponent<{ color: string, value: string }> = ({ color, value }) => {
   const theme = useContext(ThemeContext)
 
   return <Wrapper>
-      <ShadeBox value={value}/>
+      <ColorBox color={color} value={value}/>
       <Values>
         <div>{value}</div>
-        <div>{theme.colors.shades[value]}</div>
+        <div>{theme.colors[color][value]}</div>
       </Values>
     </Wrapper>
 }
 
-export default Shade
+export default Color

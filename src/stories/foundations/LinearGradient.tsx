@@ -1,7 +1,7 @@
 import { h, Fragment, FunctionalComponent } from 'preact';
 import { useContext } from "preact/hooks"
 import styled, { ThemeContext, ThemeProvider } from "styled-components"
-import { light } from "../../lib/theme"
+import { light } from "../../../lib/theme"
 
 const LinearGradientBox = styled.div<{ name: string }>`
   width: 392px;
