@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [preact()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.js'),
+      entry: path.resolve(__dirname, 'lib/main.ts'),
       name: '@logrock/pebbles',
       fileName: (format) => `logrock-pebbles.${format}.js`
     },
