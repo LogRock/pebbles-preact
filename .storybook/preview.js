@@ -10,6 +10,13 @@ addDecorator(withThemesProvider(themes), ThemeProvider);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  backgrounds: {
+      default: 'light',
+      values: [
+        { name: 'light', value: '#F9FAFB' },
+        { name: 'dark', value: '#1F2937' },
+      ],
+    },
   controls: {
     matchers: {
       color: /(background|color)$/i,

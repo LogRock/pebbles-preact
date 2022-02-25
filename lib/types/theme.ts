@@ -105,7 +105,7 @@ interface Shadows {
   xLarge: CSS.Property.BoxShadow
   xxLarge: CSS.Property.BoxShadow
   upXSmall: CSS.Property.BoxShadow
-  upXmall: CSS.Property.BoxShadow
+  upSmall: CSS.Property.BoxShadow
   upMedium: CSS.Property.BoxShadow
   upLarge: CSS.Property.BoxShadow
   upXLarge: CSS.Property.BoxShadow

@@ -6,7 +6,7 @@ export default {
   title: 'Foundations/Colors/Shades',
   component: Shade,
   argTypes: {
-    value: {
+    name: {
       options: ['0', '100'],
       control: { type: 'radio' },
     },
