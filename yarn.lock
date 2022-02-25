@@ -1748,6 +1748,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@logrock/pebbles@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@logrock/pebbles@workspace:."
+  dependencies:
+    "@babel/core": ^7.17.5
+    "@mdx-js/react": ^1.6.22
+    "@preact/preset-vite": ^2.1.5
+    "@rollup/plugin-typescript": ^8.3.1
+    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/git": ^10.0.1
+    "@semantic-release/npm": ^9.0.0
+    "@storybook/addon-actions": ^6.4.19
+    "@storybook/addon-docs": ^6.4.19
+    "@storybook/addon-essentials": ^6.4.19
+    "@storybook/addon-links": ^6.4.19
+    "@storybook/preact": ^6.4.19
+    "@types/node": ^17.0.20
+    "@types/styled-components": ^5.1.23
+    babel-loader: ^8.2.3
+    core-js: ^3.21.1
+    csstype: ^3.0.10
+    preact: ^10.5.15
+    semantic-release: ^19.0.2
+    semantic-release-slack-bot: ^3.5.2
+    storybook-addon-styled-component-theme: ^2.0.0
+    styled-components: ^5.3.3
+    typescript: ^4.5.4
+    vite: ^2.8.0
+  peerDependencies:
+    preact: ^10
+    styled-components: ^5
+  languageName: unknown
+  linkType: soft
+
 "@mdx-js/loader@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/loader@npm:1.6.22"
@@ -12033,40 +12067,6 @@ __metadata:
   checksum: 2c950a100b1da72123449208e231afc188d980177d021d7121e96a2de7f2abbc96ead2b87d03d8fe5c318face097f203270d7e27908af9f471c165a4e8e69c92
   languageName: node
   linkType: hard
-
-"pebbles@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "pebbles@workspace:."
-  dependencies:
-    "@babel/core": ^7.17.5
-    "@mdx-js/react": ^1.6.22
-    "@preact/preset-vite": ^2.1.5
-    "@rollup/plugin-typescript": ^8.3.1
-    "@semantic-release/changelog": ^6.0.1
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/npm": ^9.0.0
-    "@storybook/addon-actions": ^6.4.19
-    "@storybook/addon-docs": ^6.4.19
-    "@storybook/addon-essentials": ^6.4.19
-    "@storybook/addon-links": ^6.4.19
-    "@storybook/preact": ^6.4.19
-    "@types/node": ^17.0.20
-    "@types/styled-components": ^5.1.23
-    babel-loader: ^8.2.3
-    core-js: ^3.21.1
-    csstype: ^3.0.10
-    preact: ^10.5.15
-    semantic-release: ^19.0.2
-    semantic-release-slack-bot: ^3.5.2
-    storybook-addon-styled-component-theme: ^2.0.0
-    styled-components: ^5.3.3
-    typescript: ^4.5.4
-    vite: ^2.8.0
-  peerDependencies:
-    preact: ^10
-    styled-components: ^5
-  languageName: unknown
-  linkType: soft
 
 "picocolors@npm:^0.2.1":
   version: 0.2.1
