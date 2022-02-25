@@ -4,8 +4,8 @@ on:
       - main
     
 jobs:
-  CI:
-    name: CI
+  PR CI:
+    name: PR CI
     runs-on: ubuntu-latest
 
     steps:
