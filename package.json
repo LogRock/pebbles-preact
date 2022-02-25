@@ -1,5 +1,5 @@
 {
-  "name": "pebbles",
+  "name": "@logrock/pebbles",
   "version": "2.0.0",
   "scripts": {
     "dev": "vite",
