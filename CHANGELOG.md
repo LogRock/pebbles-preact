@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/LogRock/pebbles/compare/v2.0.2...v2.1.0) (2022-02-25)
+
+
+### Features
+
+* **project:** :construction_worker: add semantic release slack back ([b3e8ee3](https://github.com/LogRock/pebbles/commit/b3e8ee398704a36a07a225ac39c70be00e6b92e1))
+
 ## [2.0.2](https://github.com/LogRock/pebbles/compare/v2.0.1...v2.0.2) (2022-02-25)
 
 
