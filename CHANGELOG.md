@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/LogRock/pebbles/compare/v2.1.0...v2.2.0) (2022-02-25)
+
+
+### Bug Fixes
+
+* **storybook:** :bug: fix typing and strings ([794c726](https://github.com/LogRock/pebbles/commit/794c726134d1a7f4d1f10bfbc41dcf9b054a5916))
+
+
+### Features
+
+* **storybook:** :lipstick: add shadow stories ([09681ea](https://github.com/LogRock/pebbles/commit/09681ea8eeb3385d6d1323d9278f2a1efe6f89d0))
+
 # [2.1.0](https://github.com/LogRock/pebbles/compare/v2.0.2...v2.1.0) (2022-02-25)
 
 
