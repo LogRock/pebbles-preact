@@ -8,18 +8,18 @@ export default {
   argTypes: {
     value: {
       options: [
-        xSmall, 
-        small, 
-        medium, 
-        large, 
-        xLarge, 
-        xxLarge, 
-        upXSmall, 
-        upSmall, 
-        upMedium, 
-        upLarge, 
-        upXLarge, 
-        upXxLarge
+        'xSmall', 
+        'small', 
+        'medium', 
+        'large', 
+        'xLarge', 
+        'xxLarge', 
+        'upXSmall', 
+        'upSmall', 
+        'upMedium', 
+        'upLarge', 
+        'upXLarge', 
+        'upXxLarge'
       ],
       control: { type: 'radio' },
     },
@@ -30,60 +30,60 @@ const Template = (args) => <Shadow {...args} />
 
 export const xSmall = Template.bind({});
 xSmall.args = {
-  size: 'xSmall'
+  variant: 'xSmall'
 };
 
 export const small = Template.bind({});
 small.args = {
-  size: 'small'
+  variant: 'small'
 };
 
 export const medium = Template.bind({});
 medium.args = {
-  size: 'medium'
+  variant: 'medium'
 };
 
 export const large = Template.bind({});
 large.args = {
-  size: 'large'
+  variant: 'large'
 };
 
 export const xLarge = Template.bind({});
 xLarge.args = {
-  size: 'xLarge'
+  variant: 'xLarge'
 };
 
 export const xxLarge = Template.bind({});
 xxLarge.args = {
-  size: 'xxLarge'
+  variant: 'xxLarge'
 };
 
 export const upXSmall = Template.bind({});
 upXSmall.args = {
-  size: 'upXSmall'
+  variant: 'upXSmall'
 };
 
 export const upSmall = Template.bind({});
 upSmall.args = {
-  size: 'upSmall'
+  variant: 'upSmall'
 };
 
 export const upMedium = Template.bind({});
 upMedium.args = {
-  size: 'upMedium'
+  variant: 'upMedium'
 };
 
 export const upLarge = Template.bind({});
 upLarge.args = {
-  size: 'upLarge'
+  variant: 'upLarge'
 };
 
 export const upXLarge = Template.bind({});
 upXLarge.args = {
-  size: 'upXLarge'
+  variant: 'upXLarge'
 };
 
 export const upXxLarge = Template.bind({});
 upXxLarge.args = {
-  size: 'upXxLarge'
+  variant: 'upXxLarge'
 };
