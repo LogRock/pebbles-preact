@@ -26,14 +26,8 @@ jobs:
 
       - name: Create Release
         env:
-          GIT_AUTHOR_NAME: "@logrock-eng"
-          GIT_AUTHOR_EMAIL: engineering@logrock.com
-          GIT_COMMITTER_NAME: "@logrock-eng"
-          GIT_COMMITTER_EMAIL: engineering@logrock.com
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_RELEASE_WEBHOOK }}
         run: yarn semantic-release
 
       - name: Deploy Storybook
