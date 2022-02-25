@@ -4,7 +4,7 @@ on:
       - main
     
 jobs:
-  Main CI:
+  Main_CI:
     name: Main CI
     runs-on: ubuntu-latest
 
