@@ -1,6 +1,18 @@
 {
   "name": "@logrock/pebbles",
   "version": "2.0.0",
+   "files": [
+    "dist"
+  ],
+  "main": "./dist/logrock-pebbles.umd.js",
+  "module": "./dist/logrock-pebbles.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/logrock-pebbles.es.js",
+      "require": "./dist/logrock-pebbles.umd.js"
+    }
+  },
+  "private": "false",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -38,5 +50,12 @@
     "preact": "^10",
     "styled-components": "^5"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LogRock/pebbles.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
