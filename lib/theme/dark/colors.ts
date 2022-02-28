@@ -9,8 +9,8 @@ export const neutral = {
   700: "#374151",
   800: "#1F2937",
   900: "#111827",
-}
- export const primary = {
+};
+export const primary = {
   50: "#FDF5E1",
   100: "#F9E0A5",
   200: "#F7D586",
@@ -21,8 +21,8 @@ export const neutral = {
   700: "#C08A0C",
   800: "#996E0A",
   900: "#735307",
-}
-  export const secondary = {
+};
+export const secondary = {
   50: "#DCE6FD",
   100: "#B9CCFB",
   200: "#96B3F8",
@@ -33,8 +33,8 @@ export const neutral = {
   700: "#0B3EB3",
   800: "#092E86",
   900: "#061F59",
-}
- export const  success= {
+};
+export const success = {
   50: "#F0FDF4",
   100: "#DCFCE7",
   200: "#BBF7D0",
@@ -45,8 +45,8 @@ export const neutral = {
   700: "#15803D",
   800: "#166534",
   900: "#14532D",
-}
- export const  warning= {
+};
+export const warning = {
   50: "#FEF1DC",
   100: "#FBD696",
   200: "#F9C873",
@@ -57,8 +57,8 @@ export const neutral = {
   700: "#B27307",
   800: "#9C6506",
   900: "#593A04",
-}
- export const  error= {
+};
+export const error = {
   50: "#FEF2F2",
   100: "#FEE2E2",
   200: "#FECACA",
@@ -69,8 +69,8 @@ export const neutral = {
   700: "#B91C1C",
   800: "#991B1B",
   900: "#7F1D1D",
-}
- export const  shades= {
-    0: "#FFFFFF",
-    100: "#000000",
-  }
+};
+export const shades = {
+  0: "#FFFFFF",
+  100: "#000000",
+};
