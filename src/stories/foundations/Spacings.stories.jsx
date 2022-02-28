@@ -3,10 +3,10 @@ import { h } from "preact";
 import Spacings from "./Spacings";
 
 export default {
-  title: "Foundations/Spacings",
+  title: "Foundations",
   component: Spacings,
 };
 
 const Template = () => <Spacings />;
 
-export const All = Template.bind({});
+export const Spacing = Template.bind({});
