@@ -19,7 +19,10 @@ jobs:
 
       - name: Install Deps
         run: yarn install
-    
+
+      - name: ESLint
+        run: yarn eslint .
+
       - name: Build Lib
         run: yarn build
 
