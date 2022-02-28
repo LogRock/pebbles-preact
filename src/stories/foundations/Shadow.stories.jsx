@@ -3,7 +3,7 @@ import { h } from "preact";
 import Shadow from "./Shadow";
 
 export default {
-  title: "Foundations/Shadows",
+  title: "Foundations/Shadows And Blurs/Shadows",
   component: Shadow,
   argTypes: {
     value: {
