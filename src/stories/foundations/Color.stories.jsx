@@ -1,19 +1,28 @@
 /** @jsx h */
-import { h, Fragment } from 'preact';
-import Color from './Color';
+import { h, Fragment } from "preact";
+import Color from "./Color";
 
 export default {
-  title: 'Foundations/Colors/Primary Colors',
+  title: "Foundations/Colors/Primary Colors",
   component: Color,
   argTypes: {
     color: {
-      options: ['neutral', 'primary', 'secondary', 'success', 'alert', 'warning', 'error'],
-      control: { type: 'radio' },
+      options: [
+        "neutral",
+        "primary",
+        "secondary",
+        "success",
+        "alert",
+        "warning",
+        "error",
+      ],
+      control: { type: "radio" },
     },
   },
 };
 
-const Template = (args) => <Fragment>
+const Template = (args) => (
+  <Fragment>
     <Color {...args} value="50" />
     <Color {...args} value="100" />
     <Color {...args} value="200" />
@@ -25,33 +34,34 @@ const Template = (args) => <Fragment>
     <Color {...args} value="800" />
     <Color {...args} value="900" />
   </Fragment>
+);
 
 export const Neutral = Template.bind({});
 Neutral.args = {
-  color: 'neutral'
+  color: "neutral",
 };
 
 export const Primary = Template.bind({});
 Primary.args = {
-  color: 'primary'
+  color: "primary",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  color: 'secondary'
+  color: "secondary",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  color: 'success'
+  color: "success",
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
-  color: 'warning'
+  color: "warning",
 };
 
 export const Error = Template.bind({});
 Error.args = {
-  color: 'error'
+  color: "error",
 };
