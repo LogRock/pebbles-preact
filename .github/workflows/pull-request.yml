@@ -23,6 +23,9 @@ jobs:
       - name: ESLint
         run: yarn eslint .
 
+      - name: Prettier
+        run: yarn prettier .
+
       - name: Build Lib
         run: yarn build
 
