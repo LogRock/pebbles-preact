@@ -54,6 +54,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.3.4",
     "pinst": "^3.0.0",
     "preact": "^10.5.15",
     "prettier": "^2.5.1",
@@ -78,5 +79,9 @@
   },
   "dependencies": {
     "@types/jest": "^27.4.1"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx,mdx}": "eslint --fix",
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
