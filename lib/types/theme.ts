@@ -194,6 +194,7 @@ interface IconButtonSize {
 
 export interface Buttons {
   fontFamily: CSS.Property.FontFamily;
+  fontWeight: CSS.Property.FontWeight;
   regular: {
     large: ButtonSize;
     medium: ButtonSize;
@@ -214,6 +215,46 @@ export interface Buttons {
   };
 }
 
+export interface InputBox {
+  fontFamily: CSS.Property.FontFamily;
+  fontWeight: CSS.Property.FontWeight;
+  fontStyle: CSS.Property.FontStyle;
+  fontSize: CSS.Property.FontSize;
+  lineHeight: CSS.Property.LineHeight;
+  fontFeatureSettings: CSS.Property.FontFeatureSettings;
+  padding: CSS.Property.Padding;
+  boxSizing: CSS.Property.BoxSizing;
+  boxShadow: CSS.Property.BoxShadow;
+  borderRadius: CSS.Property.BorderRadius;
+  border: CSS.Property.Border;
+  margin: CSS.Property.Margin;
+
+  focused: {
+    boxSizing: CSS.Property.BoxSizing;
+    boxShadow: CSS.Property.BoxShadow;
+    borderRadius: CSS.Property.BorderRadius;
+    border: CSS.Property.Border;
+  };
+  disabled: {
+    boxSizing: CSS.Property.BoxSizing;
+    boxShadow: CSS.Property.BoxShadow;
+    borderRadius: CSS.Property.BorderRadius;
+    border: CSS.Property.Border;
+  };
+  label: {
+    fontStyle: CSS.Property.FontStyle;
+    fontSize: CSS.Property.FontSize;
+    fontWeight: CSS.Property.FontWeight;
+    lineHeight: CSS.Property.LineHeight;
+  };
+  notification: {
+    fontStyle: CSS.Property.FontStyle;
+    fontSize: CSS.Property.FontSize;
+    fontWeight: CSS.Property.FontWeight;
+    lineHeight: CSS.Property.LineHeight;
+  };
+}
+
 export default interface Theme {
   breakpoints: {
     mobile: string;
@@ -227,4 +268,5 @@ export default interface Theme {
   blurs: Blurs;
   gradients: Gradients;
   buttons: Buttons;
+  inputBox: InputBox;
 }

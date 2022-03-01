@@ -1,4 +1,4 @@
-import Theme, { Buttons, ButtonVariant } from "../../types/theme";
+import Theme, { Buttons, ButtonVariant, InputBox } from "../../types/theme";
 import {
   neutral,
   error,
@@ -140,6 +140,7 @@ const disabledVariant: ButtonVariant = {
 
 const buttons: Buttons = {
   fontFamily: "Archivo, sans-serif",
+  fontWeight: 500,
   regular: {
     xSmall: {
       borderRadius: "2px",
@@ -204,6 +205,69 @@ const buttons: Buttons = {
   },
 };
 
+const shadows = {
+  xSmall: "0px 1px 2px rgba(16, 24, 40, 0.05)",
+  small:
+    "0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1)",
+  medium:
+    "0px 4px 6px -1px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.1)",
+  large:
+    "0px 10px 15px -3px rgba(16, 24, 40, 0.1), 0px 4px 6px -4px rgba(16, 24, 40, 0.1)",
+  xLarge:
+    "0px 20px 25px -5px rgba(16, 24, 40, 0.1), 0px 8px 10px -6px rgba(16, 24, 40, 0.1)",
+  xxLarge: "0px 25px 50px -12px rgba(16, 24, 40, 0.25)",
+  upXSmall: "0px -1px 2px rgba(16, 24, 40, 0.05)",
+  upSmall:
+    "0px -1px 3px rgba(16, 24, 40, 0.1), 0px -1px 2px -1px rgba(16, 24, 40, 0.1)",
+  upMedium:
+    "0px -4px 6px -1px rgba(16, 24, 40, 0.1), 0px -2px 4px -2px rgba(16, 24, 40, 0.1)",
+  upLarge:
+    "0px -10px 15px -3px rgba(16, 24, 40, 0.1), 0px -4px 6px -4px rgba(16, 24, 40, 0.1)",
+  upXLarge:
+    "0px -20px 25px -5px rgba(16, 24, 40, 0.1), 0px -8px 10px -6px rgba(16, 24, 40, 0.1)",
+  upXxLarge: "0px -25px 50px -12px rgba(16, 24, 40, 0.25)",
+};
+
+const inputBox: InputBox = {
+  fontFamily: "Archivo, sans-serif",
+  fontWeight: "normal",
+  fontStyle: "normal",
+  fontSize: "16px",
+  lineHeight: "24px",
+  fontFeatureSettings: "'salt' on",
+  padding: "10px 12px",
+  boxSizing: "border-box",
+  boxShadow: shadows.xSmall,
+  borderRadius: "2px",
+  border: "1px solid #D1D5DB",
+  margin: "8px 0px",
+
+  label: {
+    fontStyle: "normal",
+    fontSize: "16px",
+    lineHeight: "24px",
+    fontWeight: 500,
+  },
+  notification: {
+    fontStyle: "normal",
+    fontSize: "14px",
+    lineHeight: "20px",
+    fontWeight: 500,
+  },
+  focused: {
+    boxSizing: "border-box",
+    boxShadow: `0px 0px 0px 4px ${primary["100"]}`,
+    borderRadius: "2px",
+    border: `1px solid ${primary["300"]}`,
+  },
+  disabled: {
+    boxSizing: "border-box",
+    boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05)",
+    borderRadius: "2px",
+    border: `1px solid ${neutral["300"]}`,
+  },
+};
+
 const theme: Theme = {
   name: "light",
   breakpoints: {
@@ -237,28 +301,7 @@ const theme: Theme = {
     overlineMedium,
     overlineSmall,
   },
-  shadows: {
-    xSmall: "0px 1px 2px rgba(16, 24, 40, 0.05)",
-    small:
-      "0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1)",
-    medium:
-      "0px 4px 6px -1px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.1)",
-    large:
-      "0px 10px 15px -3px rgba(16, 24, 40, 0.1), 0px 4px 6px -4px rgba(16, 24, 40, 0.1)",
-    xLarge:
-      "0px 20px 25px -5px rgba(16, 24, 40, 0.1), 0px 8px 10px -6px rgba(16, 24, 40, 0.1)",
-    xxLarge: "0px 25px 50px -12px rgba(16, 24, 40, 0.25)",
-    upXSmall: "0px -1px 2px rgba(16, 24, 40, 0.05)",
-    upSmall:
-      "0px -1px 3px rgba(16, 24, 40, 0.1), 0px -1px 2px -1px rgba(16, 24, 40, 0.1)",
-    upMedium:
-      "0px -4px 6px -1px rgba(16, 24, 40, 0.1), 0px -2px 4px -2px rgba(16, 24, 40, 0.1)",
-    upLarge:
-      "0px -10px 15px -3px rgba(16, 24, 40, 0.1), 0px -4px 6px -4px rgba(16, 24, 40, 0.1)",
-    upXLarge:
-      "0px -20px 25px -5px rgba(16, 24, 40, 0.1), 0px -8px 10px -6px rgba(16, 24, 40, 0.1)",
-    upXxLarge: "0px -25px 50px -12px rgba(16, 24, 40, 0.25)",
-  },
+  shadows,
   blurs: {
     none: "0",
     small: "8px",
@@ -279,6 +322,7 @@ const theme: Theme = {
     teaLeaves,
   },
   buttons,
+  inputBox,
 };
 
 export default theme;
