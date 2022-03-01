@@ -1,4 +1,3 @@
-import { h } from "preact";
 import { light, dark } from "../lib/theme";
 
 import { addDecorator } from "@storybook/preact";
