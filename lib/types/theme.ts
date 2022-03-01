@@ -163,6 +163,57 @@ interface Gradients {
   // spriteCrush: MeshGradient
 }
 
+interface ButtonStyle {
+  background: CSS.Property.BackgroundColor;
+  borderColor: CSS.Property.BorderColor;
+  borderWidth: CSS.Property.BorderWidth;
+  contentColor: CSS.Property.Color;
+}
+
+export interface ButtonVariant {
+  primary: ButtonStyle;
+  secondary: ButtonStyle;
+  tertiary: ButtonStyle;
+  outlined: ButtonStyle;
+}
+
+interface ButtonSize {
+  verticalPadding: CSS.Property.PaddingTop;
+  horizontalPadding: CSS.Property.PaddingLeft;
+  fontSize: CSS.Property.FontSize;
+  iconPadding: CSS.Property.Padding;
+  borderRadius: CSS.Property.BorderRadius;
+}
+
+interface IconButtonSize {
+  verticalPadding: CSS.Property.PaddingTop;
+  horizontalPadding: CSS.Property.PaddingLeft;
+  size: CSS.Property.Width;
+  borderRadius: CSS.Property.BorderRadius;
+}
+
+export interface Buttons {
+  fontFamily: CSS.Property.FontFamily;
+  regular: {
+    large: ButtonSize;
+    medium: ButtonSize;
+    small: ButtonSize;
+    xSmall: ButtonSize;
+    primary: ButtonVariant;
+    destructive: ButtonVariant;
+    disabled: ButtonVariant;
+  };
+  icon: {
+    large: IconButtonSize;
+    medium: IconButtonSize;
+    small: IconButtonSize;
+    xSmall: IconButtonSize;
+    primary: ButtonVariant;
+    destructive: ButtonVariant;
+    disabled: ButtonVariant;
+  };
+}
+
 export default interface Theme {
   breakpoints: {
     mobile: string;
@@ -175,4 +226,5 @@ export default interface Theme {
   shadows: Shadows;
   blurs: Blurs;
   gradients: Gradients;
+  buttons: Buttons;
 }
