@@ -8,6 +8,7 @@ const baseButtonCSS = css`
   flex-flow: row nowrap;
   align-items: center;
   border-style: solid;
+  font-family: ${({ theme }) => theme.buttons.fontFamily};
 
   & path {
     fill: currentColor;
