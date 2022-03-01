@@ -82,6 +82,14 @@ interface ParagraphProps {
   };
 }
 
+interface OverlineProps {
+  fontFamily: CSS.Property.FontFamily;
+  fontSize: CSS.Property.FontSize;
+  lineHeight: CSS.Property.LineHeight;
+  weight: CSS.Property.FontWeight;
+  textTransform: CSS.Property.TextTransform;
+}
+
 interface Typography {
   displayLarge: HeaderProps;
   displaySmall: HeaderProps;
@@ -95,9 +103,9 @@ interface Typography {
   paragraphMedium: ParagraphProps;
   paragraphSmall: ParagraphProps;
   paragraphXSmall: ParagraphProps;
-  overlineLarge: ParagraphProps;
-  overlineMedium: ParagraphProps;
-  overlineSmall: ParagraphProps;
+  overlineLarge: OverlineProps;
+  overlineMedium: OverlineProps;
+  overlineSmall: OverlineProps;
 }
 
 interface Shadows {

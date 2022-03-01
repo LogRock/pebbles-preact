@@ -254,31 +254,22 @@ export const overlineLarge = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "14px",
   lineHeight: "20px",
-  weights: {
-    normal: 600,
-    bold: 600,
-    bolder: 600,
-  },
+  weight: 600,
+  textTransform: "uppercase",
 };
 
 export const overlineMedium = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "12px",
   lineHeight: "20px",
-  weights: {
-    normal: 600,
-    bold: 600,
-    bolder: 600,
-  },
+  weight: 600,
+  textTransform: "uppercase",
 };
 
 export const overlineSmall = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "11px",
   lineHeight: "20px",
-  weights: {
-    normal: 600,
-    bold: 600,
-    bolder: 600,
-  },
+  weight: 600,
+  textTransform: "uppercase",
 };

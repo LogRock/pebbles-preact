@@ -15,6 +15,10 @@ export type TypographyParagraphProps = {
   strikedThrough?: boolean;
 };
 
+export type TypographyOverlineProps = {
+  theme: Theme;
+};
+
 const decorationsFromProps = ({
   underlined,
   strikedThrough,
@@ -27,6 +31,7 @@ const decorationsFromProps = ({
 
 export const DisplayLarge = styled.h1<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.displayLarge.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.displayLarge.mobile.fontSize};
   line-height: ${({ theme }) =>
@@ -53,6 +58,7 @@ export const DisplayLarge = styled.h1<TypographyHeaderProps>`
 
 export const DisplaySmall = styled.h2<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.displaySmall.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.displaySmall.mobile.fontSize};
   line-height: ${({ theme }) =>
@@ -79,6 +85,7 @@ export const DisplaySmall = styled.h2<TypographyHeaderProps>`
 
 export const HeadingH1 = styled.h1<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH1.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH1.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH1.mobile.lineHeight};
@@ -103,6 +110,7 @@ export const HeadingH1 = styled.h1<TypographyHeaderProps>`
 
 export const HeadingH2 = styled.h2<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH2.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH2.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH2.mobile.lineHeight};
@@ -127,6 +135,7 @@ export const HeadingH2 = styled.h2<TypographyHeaderProps>`
 
 export const HeadingH3 = styled.h3<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH3.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH3.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH3.mobile.lineHeight};
@@ -151,6 +160,7 @@ export const HeadingH3 = styled.h3<TypographyHeaderProps>`
 
 export const HeadingH4 = styled.h4<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH4.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH4.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH4.mobile.lineHeight};
@@ -175,6 +185,7 @@ export const HeadingH4 = styled.h4<TypographyHeaderProps>`
 
 export const HeadingH5 = styled.h5<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH5.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH5.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH5.mobile.lineHeight};
@@ -199,6 +210,7 @@ export const HeadingH5 = styled.h5<TypographyHeaderProps>`
 
 export const HeadingH6 = styled.h6<TypographyHeaderProps>`
   font-family: ${({ theme }) => theme.typography.headingH6.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
 
   font-size: ${({ theme }) => theme.typography.headingH6.mobile.fontSize};
   line-height: ${({ theme }) => theme.typography.headingH6.mobile.lineHeight};
@@ -223,6 +235,8 @@ export const HeadingH6 = styled.h6<TypographyHeaderProps>`
 
 export const ParagraphLarge = styled.p<TypographyParagraphProps>`
   font-family: ${({ theme }) => theme.typography.paragraphLarge.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.paragraphLarge.fontSize};
   line-height: ${({ theme }) => theme.typography.paragraphLarge.lineHeight};
 
@@ -237,6 +251,8 @@ export const ParagraphLarge = styled.p<TypographyParagraphProps>`
 
 export const ParagraphMedium = styled.p<TypographyParagraphProps>`
   font-family: ${({ theme }) => theme.typography.paragraphMedium.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.paragraphMedium.fontSize};
   line-height: ${({ theme }) => theme.typography.paragraphMedium.lineHeight};
 
@@ -251,6 +267,8 @@ export const ParagraphMedium = styled.p<TypographyParagraphProps>`
 
 export const ParagraphSmall = styled.p<TypographyParagraphProps>`
   font-family: ${({ theme }) => theme.typography.paragraphSmall.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.paragraphSmall.fontSize};
   line-height: ${({ theme }) => theme.typography.paragraphSmall.lineHeight};
 
@@ -265,6 +283,8 @@ export const ParagraphSmall = styled.p<TypographyParagraphProps>`
 
 export const ParagraphXSmall = styled.p<TypographyParagraphProps>`
   font-family: ${({ theme }) => theme.typography.paragraphXSmall.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.paragraphXSmall.fontSize};
   line-height: ${({ theme }) => theme.typography.paragraphXSmall.lineHeight};
 
@@ -277,44 +297,41 @@ export const ParagraphXSmall = styled.p<TypographyParagraphProps>`
   font-style: ${({ italic }) => (italic ? "italic" : "normal")};
 `;
 
-export const OverlineLarge = styled.p<TypographyParagraphProps>`
+export const OverlineLarge = styled.p<TypographyOverlineProps>`
   font-family: ${({ theme }) => theme.typography.overlineLarge.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.overlineLarge.fontSize};
   line-height: ${({ theme }) => theme.typography.overlineLarge.lineHeight};
 
-  font-weight: ${({ theme, weight }) =>
-    weight
-      ? theme.typography.overlineLarge.weights[weight]
-      : theme.typography.overlineLarge.weights.normal};
+  font-weight: ${({ theme }) => theme.typography.overlineLarge.weight};
 
-  text-decoration: ${decorationsFromProps};
-  font-style: ${({ italic }) => (italic ? "italic" : "normal")};
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `;
 
-export const OverlineMedium = styled.p<TypographyParagraphProps>`
+export const OverlineMedium = styled.p<TypographyOverlineProps>`
   font-family: ${({ theme }) => theme.typography.overlineMedium.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.overlineMedium.fontSize};
   line-height: ${({ theme }) => theme.typography.overlineMedium.lineHeight};
 
-  font-weight: ${({ theme, weight }) =>
-    weight
-      ? theme.typography.overlineMedium.weights[weight]
-      : theme.typography.overlineMedium.weights.normal};
+  font-weight: ${({ theme }) => theme.typography.overlineMedium.weight};
 
-  text-decoration: ${decorationsFromProps};
-  font-style: ${({ italic }) => (italic ? "italic" : "normal")};
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `;
 
-export const OverlineSmall = styled.p<TypographyParagraphProps>`
+export const OverlineSmall = styled.p<TypographyOverlineProps>`
   font-family: ${({ theme }) => theme.typography.overlineSmall.fontFamily};
+  color: ${({ theme }) => theme.colors.neutral["900"]};
+
   font-size: ${({ theme }) => theme.typography.overlineSmall.fontSize};
   line-height: ${({ theme }) => theme.typography.overlineSmall.lineHeight};
 
-  font-weight: ${({ theme, weight }) =>
-    weight
-      ? theme.typography.overlineSmall.weights[weight]
-      : theme.typography.overlineSmall.weights.normal};
+  font-weight: ${({ theme }) => theme.typography.overlineSmall.weight};
 
-  text-decoration: ${decorationsFromProps};
-  font-style: ${({ italic }) => (italic ? "italic" : "normal")};
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `;
