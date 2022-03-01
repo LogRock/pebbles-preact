@@ -45,7 +45,7 @@ interface Colors {
   };
 }
 
-interface HeaderProps {
+export interface HeaderProps {
   fontFamily: CSS.Property.FontFamily;
   desktop: {
     weights: {
@@ -71,7 +71,7 @@ interface HeaderProps {
   };
 }
 
-interface ParagraphProps {
+export interface ParagraphProps {
   fontFamily: CSS.Property.FontFamily;
   fontSize: CSS.Property.FontSize;
   lineHeight: CSS.Property.LineHeight;
@@ -82,7 +82,7 @@ interface ParagraphProps {
   };
 }
 
-interface OverlineProps {
+export interface OverlineProps {
   fontFamily: CSS.Property.FontFamily;
   fontSize: CSS.Property.FontSize;
   lineHeight: CSS.Property.LineHeight;

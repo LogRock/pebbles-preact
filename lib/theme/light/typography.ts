@@ -1,4 +1,6 @@
-export const displayLarge = {
+import { OverlineProps, HeaderProps, ParagraphProps } from "../../types/theme";
+
+export const displayLarge: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -24,7 +26,7 @@ export const displayLarge = {
   },
 };
 
-export const displaySmall = {
+export const displaySmall: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -50,7 +52,7 @@ export const displaySmall = {
   },
 };
 
-export const headingH1 = {
+export const headingH1: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -76,7 +78,7 @@ export const headingH1 = {
   },
 };
 
-export const headingH2 = {
+export const headingH2: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -102,7 +104,7 @@ export const headingH2 = {
   },
 };
 
-export const headingH3 = {
+export const headingH3: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -128,7 +130,7 @@ export const headingH3 = {
   },
 };
 
-export const headingH4 = {
+export const headingH4: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -154,7 +156,7 @@ export const headingH4 = {
   },
 };
 
-export const headingH5 = {
+export const headingH5: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -180,7 +182,7 @@ export const headingH5 = {
   },
 };
 
-export const headingH6 = {
+export const headingH6: HeaderProps = {
   fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
@@ -206,7 +208,7 @@ export const headingH6 = {
   },
 };
 
-export const paragraphLarge = {
+export const paragraphLarge: ParagraphProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "18px",
   lineHeight: "28px",
@@ -217,7 +219,7 @@ export const paragraphLarge = {
   },
 };
 
-export const paragraphMedium = {
+export const paragraphMedium: ParagraphProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "16px",
   lineHeight: "24px",
@@ -228,7 +230,7 @@ export const paragraphMedium = {
   },
 };
 
-export const paragraphSmall = {
+export const paragraphSmall: ParagraphProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "14px",
   lineHeight: "20px",
@@ -239,7 +241,7 @@ export const paragraphSmall = {
   },
 };
 
-export const paragraphXSmall = {
+export const paragraphXSmall: ParagraphProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "12px",
   lineHeight: "20px",
@@ -250,7 +252,7 @@ export const paragraphXSmall = {
   },
 };
 
-export const overlineLarge = {
+export const overlineLarge: OverlineProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "14px",
   lineHeight: "20px",
@@ -258,7 +260,7 @@ export const overlineLarge = {
   textTransform: "uppercase",
 };
 
-export const overlineMedium = {
+export const overlineMedium: OverlineProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "12px",
   lineHeight: "20px",
@@ -266,7 +268,7 @@ export const overlineMedium = {
   textTransform: "uppercase",
 };
 
-export const overlineSmall = {
+export const overlineSmall: OverlineProps = {
   fontFamily: "Archivo, sans-serif",
   fontSize: "11px",
   lineHeight: "20px",
