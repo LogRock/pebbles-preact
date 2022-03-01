@@ -10,6 +10,11 @@ const baseButtonCSS = css`
   border-style: solid;
   font-family: ${({ theme }) => theme.buttons.fontFamily};
 
+  &,
+  & * {
+    font-weight: ${({ theme }) => theme.buttons.fontWeight};
+  }
+
   & path {
     fill: currentColor;
     fill-rule: evenodd;

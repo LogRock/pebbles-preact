@@ -194,6 +194,7 @@ interface IconButtonSize {
 
 export interface Buttons {
   fontFamily: CSS.Property.FontFamily;
+  fontWeight: CSS.Property.FontWeight;
   regular: {
     large: ButtonSize;
     medium: ButtonSize;

@@ -140,6 +140,7 @@ const disabledVariant: ButtonVariant = {
 
 const buttons: Buttons = {
   fontFamily: "Archivo, sans-serif",
+  fontWeight: 500,
   regular: {
     xSmall: {
       borderRadius: "2px",
