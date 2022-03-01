@@ -1,4 +1,5 @@
 export const displayLarge = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -24,6 +25,7 @@ export const displayLarge = {
 };
 
 export const displaySmall = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -49,6 +51,7 @@ export const displaySmall = {
 };
 
 export const headingH1 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -74,6 +77,7 @@ export const headingH1 = {
 };
 
 export const headingH2 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -99,6 +103,7 @@ export const headingH2 = {
 };
 
 export const headingH3 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -124,6 +129,7 @@ export const headingH3 = {
 };
 
 export const headingH4 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -149,6 +155,7 @@ export const headingH4 = {
 };
 
 export const headingH5 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -174,6 +181,7 @@ export const headingH5 = {
 };
 
 export const headingH6 = {
+  fontFamily: "Archivo, sans-serif",
   desktop: {
     weights: {
       normal: 500,
@@ -199,6 +207,7 @@ export const headingH6 = {
 };
 
 export const paragraphLarge = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "18px",
   lineHeight: "28px",
   weights: {
@@ -209,6 +218,7 @@ export const paragraphLarge = {
 };
 
 export const paragraphMedium = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "16px",
   lineHeight: "24px",
   weights: {
@@ -219,6 +229,7 @@ export const paragraphMedium = {
 };
 
 export const paragraphSmall = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "14px",
   lineHeight: "20px",
   weights: {
@@ -229,6 +240,7 @@ export const paragraphSmall = {
 };
 
 export const paragraphXSmall = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "12px",
   lineHeight: "20px",
   weights: {
@@ -239,6 +251,7 @@ export const paragraphXSmall = {
 };
 
 export const overlineLarge = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "14px",
   lineHeight: "20px",
   weights: {
@@ -248,8 +261,20 @@ export const overlineLarge = {
   },
 };
 
-export const overlineSmall = {
+export const overlineMedium = {
+  fontFamily: "Archivo, sans-serif",
   fontSize: "12px",
+  lineHeight: "20px",
+  weights: {
+    normal: 600,
+    bold: 600,
+    bolder: 600,
+  },
+};
+
+export const overlineSmall = {
+  fontFamily: "Archivo, sans-serif",
+  fontSize: "11px",
   lineHeight: "20px",
   weights: {
     normal: 600,

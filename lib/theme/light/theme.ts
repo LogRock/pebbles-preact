@@ -18,6 +18,7 @@ import {
   headingH5,
   headingH6,
   overlineLarge,
+  overlineMedium,
   overlineSmall,
   paragraphLarge,
   paragraphMedium,
@@ -38,6 +39,10 @@ import {
 } from "./gradients";
 
 const theme: Theme = {
+  breakpoints: {
+    mobile: "1023px",
+    desktop: "1024px",
+  },
   name: "light",
   spacings: {
     xxsm: "4px",
@@ -80,6 +85,7 @@ const theme: Theme = {
     paragraphSmall,
     paragraphXSmall,
     overlineLarge,
+    overlineMedium,
     overlineSmall,
   },
   shadows: {

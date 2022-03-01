@@ -1,7 +1,6 @@
-import { h, Fragment, FunctionalComponent } from "preact";
+import { h, FunctionalComponent } from "preact";
 import { useContext } from "preact/hooks";
-import styled, { ThemeContext, ThemeProvider } from "styled-components";
-import { light } from "../../../lib/theme";
+import styled, { ThemeContext } from "styled-components";
 
 const ColorBox = styled.div<{ color: string; value: string }>`
   width: 147px;

@@ -1,8 +1,5 @@
-import { h, Fragment, FunctionalComponent } from "preact";
-import { useContext } from "preact/hooks";
-import styled, { ThemeContext, ThemeProvider } from "styled-components";
-import { light } from "../../../lib/theme";
-import Theme from "../../../lib/types/theme";
+import { h, FunctionalComponent } from "preact";
+import styled from "styled-components";
 
 const ShadowBox = styled.div<{ variant: string }>`
   width: 176px;
@@ -26,8 +23,6 @@ const Wrapper = styled.div`
 `;
 
 const Shadow: FunctionalComponent<{ variant: string }> = ({ variant }) => {
-  const theme = useContext(ThemeContext);
-
   return (
     <Wrapper>
       <ShadowBox variant={variant} />

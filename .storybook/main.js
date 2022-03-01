@@ -10,4 +10,5 @@ module.exports = {
     ...options,
     presets: [["@babel/typescript", { jsxPragma: "h" }]],
   }),
+  staticDirs: ["../public"],
 };

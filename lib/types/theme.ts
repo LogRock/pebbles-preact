@@ -46,6 +46,7 @@ interface Colors {
 }
 
 interface HeaderProps {
+  fontFamily: CSS.Property.FontFamily;
   desktop: {
     weights: {
       normal: CSS.Property.FontWeight;
@@ -71,6 +72,7 @@ interface HeaderProps {
 }
 
 interface ParagraphProps {
+  fontFamily: CSS.Property.FontFamily;
   fontSize: CSS.Property.FontSize;
   lineHeight: CSS.Property.LineHeight;
   weights: {
@@ -94,6 +96,7 @@ interface Typography {
   paragraphSmall: ParagraphProps;
   paragraphXSmall: ParagraphProps;
   overlineLarge: ParagraphProps;
+  overlineMedium: ParagraphProps;
   overlineSmall: ParagraphProps;
 }
 
@@ -124,10 +127,10 @@ interface LinearGradient {
   background: CSS.Property.Background;
 }
 
-interface MeshGradient {
-  background: CSS.Property.BackgroundColor;
-  mesh: CSS.Property.BackgroundImage;
-}
+// interface MeshGradient {
+//   background: CSS.Property.BackgroundColor;
+//   mesh: CSS.Property.BackgroundImage;
+// }
 
 interface Gradients {
   sunburst: LinearGradient;
@@ -153,6 +156,10 @@ interface Gradients {
 }
 
 export default interface Theme {
+  breakpoints: {
+    mobile: string;
+    desktop: string;
+  };
   name: string;
   spacings: Spacings;
   colors: Colors;

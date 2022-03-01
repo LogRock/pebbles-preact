@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
-const path = require("path");
 import preact from "@preact/preset-vite";
-const resolvePath = (str: string) => path.resolve(__dirname, str);
 import typescript from "@rollup/plugin-typescript";
+
+const path = require("path");
+const resolvePath = (str: string) => path.resolve(__dirname, str);
 
 // https://vitejs.dev/config/
 export default defineConfig({
