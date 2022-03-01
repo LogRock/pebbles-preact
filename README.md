@@ -14,9 +14,21 @@ About us: https://logrock.com
 This library is meant to be used in Preact projects. To use it, you will have to setup your prefered Preact environment (and alias React in whatever way is more apropriate for your stack) and add a few other dependencies first:
 
 ```bash
+# styled components
 yarn add styled-components
 yarn add styled-breakpoints
+
+# fonts
+yarn add @fontsource/archivo
 ```
+
+Make the Archivo font available in your project by importing it
+
+```js
+import "@fontsource/archivo/variable-full.css";
+```
+
+If you customize the theme by changing any of the fontFamily properties, make sure that the font you want to use is also made available, by exposing it in any ways you like (fontsource is the best!)
 
 Install this lib:
 

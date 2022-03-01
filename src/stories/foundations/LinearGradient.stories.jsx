@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, Fragment } from "preact";
+import { h } from "preact";
 import LinearGradient from "./LinearGradient";
 
 export default {

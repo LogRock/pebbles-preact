@@ -1,7 +1,5 @@
-import { h, Fragment, FunctionalComponent } from "preact";
-import { useContext } from "preact/hooks";
-import styled, { ThemeContext, ThemeProvider } from "styled-components";
-import { light } from "../../../lib/theme";
+import { h, FunctionalComponent } from "preact";
+import styled from "styled-components";
 
 const LinearGradientBox = styled.div<{ name: string }>`
   width: 392px;
@@ -25,8 +23,6 @@ const Wrapper = styled.div`
 `;
 
 const Shade: FunctionalComponent<{ name: string }> = ({ name }) => {
-  const theme = useContext(ThemeContext);
-
   return (
     <Wrapper>
       <LinearGradientBox name={name} />
