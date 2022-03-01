@@ -1,9 +1,3 @@
-// expose Themes
-export { light as lightTheme } from "./theme";
-export { dark as darkTheme } from "./theme";
-export type { default as Theme } from "./types/theme";
-
-// expose Typography
 export {
   DisplayLarge,
   DisplaySmall,
@@ -20,9 +14,9 @@ export {
   ParagraphMedium,
   ParagraphSmall,
   ParagraphXSmall,
-} from "./components/Typography";
+} from "./Typography.styled";
 export type {
   TypographyHeaderProps,
   TypographyOverlineProps,
   TypographyParagraphProps,
-} from "./components/Typography";
+} from "./Typography.types";

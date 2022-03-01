@@ -1,23 +1,10 @@
 import { up } from "styled-breakpoints";
 import styled from "styled-components";
-import Theme from "../../types/theme";
-
-export type TypographyHeaderProps = {
-  weight?: "normal" | "bold" | "bolder" | "boldest";
-  theme: Theme;
-};
-
-export type TypographyParagraphProps = {
-  weight?: "normal" | "bold" | "bolder";
-  theme: Theme;
-  underlined?: boolean;
-  italic?: boolean;
-  strikedThrough?: boolean;
-};
-
-export type TypographyOverlineProps = {
-  theme: Theme;
-};
+import {
+  TypographyParagraphProps,
+  TypographyHeaderProps,
+  TypographyOverlineProps,
+} from "./Typography.types";
 
 const decorationsFromProps = ({
   underlined,
