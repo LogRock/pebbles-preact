@@ -1,4 +1,4 @@
-import Theme from "../../types/theme";
+import Theme, { Buttons, ButtonVariant } from "../../types/theme";
 import {
   neutral,
   error,
@@ -38,30 +38,179 @@ import {
   teaLeaves,
 } from "./gradients";
 
+const spacings = {
+  xxsm: "4px",
+  xsm: "8px",
+  sm: "12px",
+  md: "16px",
+  big: "20px",
+  xbig: "24px",
+  xxbig: "28px",
+  xxxbig: "32px",
+  lg: "40px",
+  xlg: "48px",
+  xxlg: "64px",
+  xxxlg: "80px",
+  huge: "96px",
+  xhuge: "128px",
+  xxhuge: "160px",
+  xxxhuge: "192px",
+};
+
+const primaryVariant: ButtonVariant = {
+  primary: {
+    background: primary["500"],
+    borderColor: primary["500"],
+    borderWidth: 0,
+    contentColor: shades["100"],
+  },
+  secondary: {
+    background: primary["200"],
+    borderColor: primary["200"],
+    borderWidth: 0,
+    contentColor: shades["100"],
+  },
+  tertiary: {
+    background: "transparent",
+    borderColor: "transparent",
+    borderWidth: 0,
+    contentColor: primary["800"],
+  },
+  outlined: {
+    background: "transparent",
+    borderColor: neutral["200"],
+    borderWidth: "1px",
+    contentColor: neutral["700"],
+  },
+};
+
+const destructiveVariant: ButtonVariant = {
+  primary: {
+    background: error["500"],
+    borderColor: error["500"],
+    borderWidth: 0,
+    contentColor: shades["0"],
+  },
+  secondary: {
+    background: error["50"],
+    borderColor: error["50"],
+    borderWidth: 0,
+    contentColor: error["600"],
+  },
+  tertiary: {
+    background: "transparent",
+    borderColor: "transparent",
+    borderWidth: 0,
+    contentColor: error["600"],
+  },
+  outlined: {
+    background: "transparent",
+    borderColor: error["300"],
+    borderWidth: "1px",
+    contentColor: error["500"],
+  },
+};
+
+const disabledVariant: ButtonVariant = {
+  primary: {
+    background: neutral["200"],
+    borderColor: neutral["200"],
+    borderWidth: 0,
+    contentColor: neutral["400"],
+  },
+  secondary: {
+    background: neutral["200"],
+    borderColor: neutral["200"],
+    borderWidth: 0,
+    contentColor: neutral["400"],
+  },
+  tertiary: {
+    background: "transparent",
+    borderColor: "transparent",
+    borderWidth: 0,
+    contentColor: neutral["300"],
+  },
+  outlined: {
+    background: "transparent",
+    borderColor: neutral["400"],
+    borderWidth: "1px",
+    contentColor: neutral["300"],
+  },
+};
+
+const buttons: Buttons = {
+  fontFamily: "Archivo, sans-serif",
+  regular: {
+    xSmall: {
+      borderRadius: "2px",
+      fontSize: "14px",
+      iconPadding: spacings.xxsm,
+      horizontalPadding: "10px",
+      verticalPadding: "6px",
+    },
+    small: {
+      borderRadius: "2px",
+      fontSize: "14px",
+      iconPadding: spacings.xxsm,
+      horizontalPadding: spacings.md,
+      verticalPadding: spacings.xsm,
+    },
+    medium: {
+      borderRadius: "2px",
+      fontSize: "16px",
+      iconPadding: spacings.xxsm,
+      horizontalPadding: spacings.big,
+      verticalPadding: spacings.xsm,
+    },
+    large: {
+      borderRadius: "2px",
+      fontSize: "18px",
+      iconPadding: spacings.xxsm,
+      horizontalPadding: spacings.xbig,
+      verticalPadding: "14px",
+    },
+    primary: primaryVariant,
+    destructive: destructiveVariant,
+    disabled: disabledVariant,
+  },
+  icon: {
+    xSmall: {
+      borderRadius: "2px",
+      size: "14px",
+      horizontalPadding: "11px",
+      verticalPadding: "10px",
+    },
+    small: {
+      borderRadius: "2px",
+      size: "14px",
+      horizontalPadding: "13px",
+      verticalPadding: "14px",
+    },
+    medium: {
+      borderRadius: "2px",
+      size: spacings.md,
+      horizontalPadding: "14px",
+      verticalPadding: spacings.md,
+    },
+    large: {
+      borderRadius: "2px",
+      size: spacings.md,
+      horizontalPadding: spacings.md,
+      verticalPadding: "22px",
+    },
+    primary: primaryVariant,
+    destructive: destructiveVariant,
+    disabled: disabledVariant,
+  },
+};
+
 const theme: Theme = {
+  name: "light",
   breakpoints: {
     mobile: "1023px",
     desktop: "1024px",
   },
-  name: "light",
-  spacings: {
-    xxsm: "4px",
-    xsm: "8px",
-    sm: "12px",
-    md: "16px",
-    big: "20px",
-    xbig: "24px",
-    xxbig: "28px",
-    xxxbig: "32px",
-    lg: "40px",
-    xlg: "48px",
-    xxlg: "64px",
-    xxxlg: "80px",
-    huge: "96px",
-    xhuge: "128px",
-    xxhuge: "160px",
-    xxxhuge: "192px",
-  },
+  spacings,
   colors: {
     neutral,
     primary,
@@ -129,6 +278,7 @@ const theme: Theme = {
     synthwave,
     teaLeaves,
   },
+  buttons,
 };
 
 export default theme;

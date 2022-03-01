@@ -5,6 +5,7 @@ import lightTheme from "../light";
 // and if/when we add one, it will only customize some aspects of the default theme
 const theme: Theme = {
   ...lightTheme,
+  name: "dark",
 };
 
 export default theme;

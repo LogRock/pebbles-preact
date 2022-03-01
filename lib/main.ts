@@ -26,3 +26,7 @@ export type {
   TypographyOverlineProps,
   TypographyParagraphProps,
 } from "./components/Typography";
+
+// expose Button
+export { default as Button } from "./components/Button";
+export type { ButtonProps } from "./components/Button";
