@@ -1,3 +1,9 @@
+## [2.3.1](https://github.com/LogRock/pebbles/compare/v2.3.0...v2.3.1) (2022-03-02)
+
+### Bug Fixes
+
+- **project:** :building_construction: remove externalized styled ([f3e8508](https://github.com/LogRock/pebbles/commit/f3e850864f63778feca55f4181848142bda1b006))
+
 # [2.3.0](https://github.com/LogRock/pebbles/compare/v2.2.0...v2.3.0) (2022-03-02)
 
 ### Bug Fixes
