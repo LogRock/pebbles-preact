@@ -15,12 +15,8 @@ export default defineConfig({
       fileName: (format) => `logrock-pebbles.${format}.js`,
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ["preact", "styled-components"],
+      external: ["preact"],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
         globals: {
           preact: "Preact",
         },
