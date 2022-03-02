@@ -1,3 +1,18 @@
+# [2.3.0](https://github.com/LogRock/pebbles/compare/v2.2.0...v2.3.0) (2022-03-02)
+
+### Bug Fixes
+
+- **Button:** :lipstick: add fontFamily that was missing ([9ed1bb5](https://github.com/LogRock/pebbles/commit/9ed1bb5d4baada8bcbdd71fee963e621ab379a7b))
+- **Button:** :lipstick: add missing font weight theme and styling ([0c988d7](https://github.com/LogRock/pebbles/commit/0c988d7d014e179e8ea0084770b60d3f318d0731))
+- **typography:** :label: add stricter typing on typography classes ([7158e17](https://github.com/LogRock/pebbles/commit/7158e17d7c491ea405195ad0a03859440c4a646a))
+- **typography:** :lipstick: add specific tokens for overline typography ([b7674f4](https://github.com/LogRock/pebbles/commit/b7674f40ed3f5f8882ddf9cdb65277fc99bd7b3e))
+
+### Features
+
+- **components:** :sparkles: add the Button component and its stories ([cea258d](https://github.com/LogRock/pebbles/commit/cea258d4be94c3e9e86b99d12902edf75fed8d6e))
+- **components:** :sparkles: add Typography components ([da06a8c](https://github.com/LogRock/pebbles/commit/da06a8c2b9d15ee545d91ae202a9d3ff833c11b5))
+- **project:** :sparkles: expose typography components and types on lib ([e2001ab](https://github.com/LogRock/pebbles/commit/e2001abb43e2b8f04f084307556b0438178b7c71))
+
 # [2.2.0](https://github.com/LogRock/pebbles/compare/v2.1.0...v2.2.0) (2022-02-25)
 
 ### Bug Fixes
