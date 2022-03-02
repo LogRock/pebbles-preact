@@ -15,10 +15,11 @@ export default defineConfig({
       fileName: (format) => `logrock-pebbles.${format}.js`,
     },
     rollupOptions: {
-      external: ["preact"],
+      external: ["preact", "styled-components", "styled-breakpoints"],
       output: {
         globals: {
           preact: "Preact",
+          "styled-components": "styled-components",
         },
       },
       plugins: [
