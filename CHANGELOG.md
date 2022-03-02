@@ -1,3 +1,9 @@
+## [2.3.2](https://github.com/LogRock/pebbles/compare/v2.3.1...v2.3.2) (2022-03-02)
+
+### Bug Fixes
+
+- **project:** :bug: fix lib ([1c9bd9f](https://github.com/LogRock/pebbles/commit/1c9bd9f3aecb3cb55801e7320d52677c503b4580))
+
 ## [2.3.1](https://github.com/LogRock/pebbles/compare/v2.3.0...v2.3.1) (2022-03-02)
 
 ### Bug Fixes
