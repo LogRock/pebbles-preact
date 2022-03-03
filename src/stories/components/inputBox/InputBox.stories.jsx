@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
 
-import { InputBox } from "../../../../lib/components/inputBox";
+import { InputBox } from "../../../../lib/components/InputBox";
 import { mdiCardAccountDetailsOutline, mdiEmailOutline } from "@mdi/js";
 
 export default {

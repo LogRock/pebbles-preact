@@ -1,39 +1,22 @@
-/** @jsx h */
-import { h, FunctionalComponent } from "preact";
 import styled from "styled-components";
-import Theme from "../../types/theme";
 import Icon from "@mdi/react";
-import { mdiAlert } from "@mdi/js";
+import { InputBoxProps } from "./InputBox";
 
-type InputBoxProps = {
-  description: string;
-  hint: {
-    content: string;
-    icon: null;
-  };
-  status: "info" | "error";
-  helper: string;
-  placeholder: string;
-  disabled: boolean;
-  onChange: () => {};
-  theme: Theme;
-};
-
-const StyledDiv = styled.div`
+export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-const InputDiv = styled.div`
+export const InputDiv = styled.div`
   position: relative;
   margin: 0px;
   padding: 0px;
 `;
 
-const HelperDiv = styled.div`
+export const HelperDiv = styled.div`
   display: flex;
 `;
-const HintDiv = styled.div`
+export const HintDiv = styled.div`
   position: absolute;
   top: 1px;
   right: 2px;
@@ -44,7 +27,7 @@ const HintDiv = styled.div`
   background: white;
 `;
 
-const Label = styled.span`
+export const Label = styled.span`
   font-family: ${({ theme }) => theme.inputBox.fontFamily};
   font-weight: ${({ theme }) => theme.inputBox.fontWeight};
   font-style: ${({ theme }) => theme.inputBox.label.fontStyle};
@@ -54,7 +37,7 @@ const Label = styled.span`
   color: black;
 `;
 
-const Helper = styled(Label)<Pick<InputBoxProps, "status">>`
+export const Helper = styled(Label)<Pick<InputBoxProps, "status">>`
   color: ${({ theme, status }) => theme.inputBox[status].helperColor};
   font-style: ${({ theme }) => theme.inputBox.helper.fontStyle};
   font-weight: ${({ theme }) => theme.inputBox.helper.fontWeight};
@@ -63,20 +46,20 @@ const Helper = styled(Label)<Pick<InputBoxProps, "status">>`
   margin: 0px 8px;
 `;
 
-const Hint = styled(Label)<Pick<InputBoxProps, "status">>`
+export const Hint = styled(Label)<Pick<InputBoxProps, "status">>`
   color: ${({ theme, status }) => theme.inputBox[status].hintColor};
   margin: 1px 0px;
 `;
 
-const StyledIcon = styled(Icon)<Pick<InputBoxProps, "status">>`
+export const StyledIcon = styled(Icon)<Pick<InputBoxProps, "status">>`
   color: ${({ theme, status }) => theme.inputBox[status].helperColor};
 `;
-const ContextIcon = styled(Icon)<Pick<InputBoxProps, "status">>`
+export const ContextIcon = styled(Icon)<Pick<InputBoxProps, "status">>`
   color: ${({ theme, status }) => theme.inputBox[status].hintColor};
   margin: 4px 4px;
 `;
 
-const StyledInput = styled.input<Pick<InputBoxProps, "status">>`
+export const StyledInput = styled.input<Pick<InputBoxProps, "status">>`
   align-items: center;
   background: white;
   display: flex;
@@ -123,38 +106,3 @@ const StyledInput = styled.input<Pick<InputBoxProps, "status">>`
     display: flex;
   }
 `;
-
-const InputBox: FunctionalComponent<InputBoxProps> = (props) => {
-  return (
-    <StyledDiv>
-      <Label>{props.description}</Label>
-      <InputDiv>
-        <StyledInput
-          status={props.status}
-          placeholder={props.placeholder}
-          disabled={props.disabled}
-          onChange={props.onChange}
-          type="text"
-        />
-        <HintDiv>
-          <Hint status={props.status}>{props.hint.content}</Hint>
-          {props.hint.icon && (
-            <ContextIcon
-              status={props.status}
-              path={props.hint.icon}
-              size={0.72}
-            />
-          )}
-        </HintDiv>
-      </InputDiv>
-      <HelperDiv>
-        {props.status === "error" && (
-          <StyledIcon status={props.status} path={mdiAlert} size={0.72} />
-        )}
-        <Helper status={props.status}>{props.helper}</Helper>
-      </HelperDiv>
-    </StyledDiv>
-  );
-};
-
-export default InputBox;
