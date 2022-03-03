@@ -229,6 +229,22 @@ const shadows = {
 };
 
 const inputBox: InputBox = {
+  fontFamily: "Archivo",
+  fontWeight: "normal",
+  fontStyle: "normal",
+  fontSize: "16px",
+  lineHeight: "24px",
+  fontFeatureSettings: "'salt' on",
+  padding: "10px 12px",
+  boxSizing: "border-box",
+  boxShadow: shadows.xSmall,
+  borderRadius: "2px",
+  border: "1px solid #D1D5DB",
+  margin: "8px 0px",
+  background: "white",
+  height: "50px",
+  width: "100%",
+
   error: {
     color: error[900],
     border: `1px solid ${error[300]}`,
@@ -255,20 +271,9 @@ const inputBox: InputBox = {
       border: `1px solid ${primary["300"]}`,
     },
   },
-  fontFamily: "Archivo",
-  fontWeight: "normal",
-  fontStyle: "normal",
-  fontSize: "16px",
-  lineHeight: "24px",
-  fontFeatureSettings: "'salt' on",
-  padding: "10px 12px",
-  boxSizing: "border-box",
-  boxShadow: shadows.xSmall,
-  borderRadius: "2px",
-  border: "1px solid #D1D5DB",
-  margin: "8px 0px",
 
   label: {
+    color: "black",
     fontStyle: "normal",
     fontSize: "16px",
     lineHeight: "24px",
@@ -279,12 +284,22 @@ const inputBox: InputBox = {
     fontSize: "14px",
     lineHeight: "20px",
     fontWeight: 500,
+    margin: "0px 8px",
   },
   disabled: {
     boxSizing: "border-box",
-    boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05)",
+    boxShadow: shadows.xSmall,
     borderRadius: "2px",
     border: `1px solid ${neutral["300"]}`,
+  },
+  hint: {
+    background: "white",
+    top: "1px",
+    right: "2px",
+    margin: "1px 0px",
+  },
+  placeholder: {
+    color: neutral[400],
   },
 };
 

@@ -223,6 +223,26 @@ export interface Focused {
 }
 
 export interface InputBox {
+  fontFamily: CSS.Property.FontFamily;
+  fontWeight: CSS.Property.FontWeight;
+  fontStyle: CSS.Property.FontStyle;
+  fontSize: CSS.Property.FontSize;
+  lineHeight: CSS.Property.LineHeight;
+  fontFeatureSettings: CSS.Property.FontFeatureSettings;
+  padding: CSS.Property.Padding;
+  boxSizing: CSS.Property.BoxSizing;
+  boxShadow: CSS.Property.BoxShadow;
+  borderRadius: CSS.Property.BorderRadius;
+  border: CSS.Property.Border;
+  margin: CSS.Property.Margin;
+  background: CSS.Property.Background;
+  height: CSS.Property.Height;
+  width: CSS.Property.Width;
+
+  placeholder: {
+    color: CSS.Property.Color;
+  };
+
   error: {
     color: CSS.Property.Color;
     border: CSS.Property.Border;
@@ -239,19 +259,6 @@ export interface InputBox {
     helperColor: CSS.Property.Color;
     focused: Focused;
   };
-  fontFamily: CSS.Property.FontFamily;
-  fontWeight: CSS.Property.FontWeight;
-  fontStyle: CSS.Property.FontStyle;
-  fontSize: CSS.Property.FontSize;
-  lineHeight: CSS.Property.LineHeight;
-  fontFeatureSettings: CSS.Property.FontFeatureSettings;
-  padding: CSS.Property.Padding;
-  boxSizing: CSS.Property.BoxSizing;
-  boxShadow: CSS.Property.BoxShadow;
-  borderRadius: CSS.Property.BorderRadius;
-  border: CSS.Property.Border;
-  margin: CSS.Property.Margin;
-
   disabled: {
     boxSizing: CSS.Property.BoxSizing;
     boxShadow: CSS.Property.BoxShadow;
@@ -259,6 +266,7 @@ export interface InputBox {
     border: CSS.Property.Border;
   };
   label: {
+    color: CSS.Property.Color;
     fontStyle: CSS.Property.FontStyle;
     fontSize: CSS.Property.FontSize;
     fontWeight: CSS.Property.FontWeight;
@@ -269,6 +277,13 @@ export interface InputBox {
     fontSize: CSS.Property.FontSize;
     fontWeight: CSS.Property.FontWeight;
     lineHeight: CSS.Property.LineHeight;
+    margin: CSS.Property.Margin;
+  };
+  hint: {
+    background: CSS.Property.Background;
+    top: CSS.Property.Inset;
+    right: CSS.Property.Inset;
+    margin: CSS.Property.Margin;
   };
 }
 

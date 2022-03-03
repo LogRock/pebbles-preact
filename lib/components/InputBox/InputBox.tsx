@@ -3,14 +3,14 @@ import { h, FunctionalComponent } from "preact";
 import Theme from "../../types/theme";
 import {
   StyledDiv,
-  InputDiv,
-  HelperDiv,
-  HintDiv,
   Label,
   Helper,
+  HelperDiv,
+  HelperIcon,
   Hint,
-  StyledIcon,
-  ContextIcon,
+  HintDiv,
+  HintIcon,
+  InputDiv,
   StyledInput,
 } from "./InputBox.styled";
 import { mdiAlert } from "@mdi/js";
@@ -44,7 +44,7 @@ const InputBox: FunctionalComponent<InputBoxProps> = (props) => {
         <HintDiv>
           <Hint status={props.status}>{props.hint.content}</Hint>
           {props.hint.icon && (
-            <ContextIcon
+            <HintIcon
               status={props.status}
               path={props.hint.icon}
               size={0.72}
@@ -54,7 +54,7 @@ const InputBox: FunctionalComponent<InputBoxProps> = (props) => {
       </InputDiv>
       <HelperDiv>
         {props.status === "error" && (
-          <StyledIcon status={props.status} path={mdiAlert} size={0.72} />
+          <HelperIcon status={props.status} path={mdiAlert} size={0.72} />
         )}
         <Helper status={props.status}>{props.helper}</Helper>
       </HelperDiv>
