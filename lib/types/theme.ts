@@ -215,7 +215,30 @@ export interface Buttons {
   };
 }
 
+export interface Focused {
+  boxSizing: CSS.Property.BoxSizing;
+  boxShadow: CSS.Property.BoxShadow;
+  borderRadius: CSS.Property.BorderRadius;
+  border: CSS.Property.Border;
+}
+
 export interface InputBox {
+  error: {
+    color: CSS.Property.Color;
+    border: CSS.Property.Border;
+    boxShadow: CSS.Property.BoxShadow;
+    hintColor: CSS.Property.Color;
+    helperColor: CSS.Property.Color;
+    focused: Focused;
+  };
+  info: {
+    color: CSS.Property.Color;
+    border: CSS.Property.Border;
+    boxShadow: CSS.Property.BoxShadow;
+    hintColor: CSS.Property.Color;
+    helperColor: CSS.Property.Color;
+    focused: Focused;
+  };
   fontFamily: CSS.Property.FontFamily;
   fontWeight: CSS.Property.FontWeight;
   fontStyle: CSS.Property.FontStyle;
@@ -229,12 +252,6 @@ export interface InputBox {
   border: CSS.Property.Border;
   margin: CSS.Property.Margin;
 
-  focused: {
-    boxSizing: CSS.Property.BoxSizing;
-    boxShadow: CSS.Property.BoxShadow;
-    borderRadius: CSS.Property.BorderRadius;
-    border: CSS.Property.Border;
-  };
   disabled: {
     boxSizing: CSS.Property.BoxSizing;
     boxShadow: CSS.Property.BoxShadow;
@@ -247,7 +264,7 @@ export interface InputBox {
     fontWeight: CSS.Property.FontWeight;
     lineHeight: CSS.Property.LineHeight;
   };
-  notification: {
+  helper: {
     fontStyle: CSS.Property.FontStyle;
     fontSize: CSS.Property.FontSize;
     fontWeight: CSS.Property.FontWeight;

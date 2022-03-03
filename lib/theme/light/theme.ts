@@ -229,7 +229,33 @@ const shadows = {
 };
 
 const inputBox: InputBox = {
-  fontFamily: "Archivo, sans-serif",
+  error: {
+    color: error[900],
+    border: `1px solid ${error[300]}`,
+    boxShadow: shadows.xSmall,
+    hintColor: neutral[500],
+    helperColor: error[600],
+    focused: {
+      boxSizing: "border-box",
+      boxShadow: `0px 0px 0px 4px ${error["100"]}`,
+      borderRadius: "2px",
+      border: `1px solid ${error["300"]}`,
+    },
+  },
+  info: {
+    color: neutral[900],
+    border: "1px solid #D1D5DB",
+    boxShadow: shadows.xSmall,
+    hintColor: neutral[500],
+    helperColor: neutral[500],
+    focused: {
+      boxSizing: "border-box",
+      boxShadow: `0px 0px 0px 4px ${primary["100"]}`,
+      borderRadius: "2px",
+      border: `1px solid ${primary["300"]}`,
+    },
+  },
+  fontFamily: "Archivo",
   fontWeight: "normal",
   fontStyle: "normal",
   fontSize: "16px",
@@ -248,17 +274,11 @@ const inputBox: InputBox = {
     lineHeight: "24px",
     fontWeight: 500,
   },
-  notification: {
+  helper: {
     fontStyle: "normal",
     fontSize: "14px",
     lineHeight: "20px",
     fontWeight: 500,
-  },
-  focused: {
-    boxSizing: "border-box",
-    boxShadow: `0px 0px 0px 4px ${primary["100"]}`,
-    borderRadius: "2px",
-    border: `1px solid ${primary["300"]}`,
   },
   disabled: {
     boxSizing: "border-box",
